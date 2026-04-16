@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple budget tracker website">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">  
+            <button class="toggle-theme icon-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <circle cx="12" cy="12" r="5" />
+                    <g stroke-width="2" stroke-linecap="round">
+                        <line x1="12" y1="1" x2="12" y2="4"/>
+                        <line x1="12" y1="20" x2="12" y2="23"/>
+                        <line x1="1" y1="12" x2="4" y2="12"/>
+                        <line x1="20" y1="12" x2="23" y2="12"/>
+                        <line x1="4.2" y1="4.2" x2="6.5" y2="6.5"/>
+                        <line x1="17.5" y1="17.5" x2="19.8" y2="19.8"/>
+                        <line x1="4.2" y1="19.8" x2="6.5" y2="17.5"/>
+                        <line x1="17.5" y1="6.5" x2="19.8" y2="4.2"/>
+                    </g>
+                </svg>
+            </button>
+            <button class="report icon-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <rect x="3" y="10" width="4" height="10"/>
+                    <rect x="10" y="6" width="4" height="14"/>
+                    <rect x="17" y="3" width="4" height="17"/>
+                </svg>
+            </button>
+            <table class="table">
+                <tr class="header">
+                    <th><button class="btn icon-btn">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <line x1="12" y1="5" x2="12" y2="19" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="5" y1="12" x2="19" y2="12" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                    </button></th>
+                    <th>Reason</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Season</th>
+                </tr>
+            </table>
+            </div>
+            <dialog class="report-window">
+                <div class="false-page-wrapper">
+                    <h1>Report</h1>
+                    <div class="report-div">
+                        <div class="top-report">
+                            <div class="total-expenditure">
+                                <h2>Total Expenditure </h2>
+                                <div class="total-buttons">
+                                    <button class="week-btn">Last week</button>
+                                    <button class="month-btn">Last Month</button>
+                                    <button class="year-btn">Last Year</button>
+                                    <button class="all-time-btn">All Time</button>
+                                </div>
+                                <p class ="total" style="font-size: 24px;">0 birr</p>                        
+                            </div>
+                            <div class="item-expenditure">
+                                <h2>Top Reasons</h2>
+                                <div class="item-buttons">
+                                    <button class="week-btn">Last week</button>
+                                    <button class="month-btn">Last Month</button>
+                                    <button class="year-btn">Last Year</button>
+                                    <button class="all-time-btn">All Time</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seasonal-expenditure">
+                            <h2>Seasonal Expenditure</h2>              
+                            <details>
+                                <summary>
+                                    <h3>Fall</h3>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <h3>Winter</h3>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <h3>Spring</h3>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <h3>Summer</h3>
+                                </summary>
+                            </details>                  
+                        </div>
+                    </div>
+
+                </div>  
+            </dialog>           
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

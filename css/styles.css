@@ -1,0 +1,246 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.page-wrapper{
+    padding: 24px;
+    background-color: whitesmoke;
+}
+
+.container{
+    padding: 24px;
+    margin: auto;   
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.table{
+    border-collapse: collapse;
+    position: relative;
+    right: 24px;
+}
+
+th:not(th:last-of-type, th:first-of-type), td:not(td:last-of-type, td:first-of-type){
+    border-right: 1px solid;    
+}
+
+td:not(td:first-of-type, tr:last-of-type td), th:not(th:first-of-type){
+    border-bottom: 1px solid;
+}
+
+td, th{
+    font-size: 16px;
+    padding: 8px;
+    width: 120px;
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    text-align: center;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.header{
+    text-align: center;
+}
+
+button:not(.icon-btn){
+    border: 2px solid slategrey;
+}
+
+.btn{
+    float: right;
+    position: relative;
+    top: 48px;
+}
+
+.icon-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none !important;
+  cursor: pointer;
+}
+
+.icon-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.toggle-theme{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.report{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.report-window{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.report-window:not([open]) {
+    display: none;
+}
+
+.report-window[open] {
+    display: flex;
+}
+
+.false-page-wrapper{
+    border: 1px solid black;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    
+}
+
+.report-div{
+    margin-top: 16px;
+}
+
+.top-report{
+    display: flex;
+}
+
+.total-expenditure{
+    width: 50%;
+}
+
+.item-expenditure{
+    width: 50%;
+}
+
+.seasonal-expenditure{
+    margin-top: 16px;
+}
+
+.total-buttons, .item-buttons{
+    margin: 8px 0;
+}
+
+.total-buttons button, .item-buttons button{
+    border-radius: 4px;
+    margin-right: 4px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+details{
+    border-bottom: 1px solid #ccc;
+    margin: 8px 0;
+}
+
+summary{
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::before{
+    content: "";
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+hr:last-child{
+    display: none
+}
+
+@media (max-width: 414px) {
+    .page-wrapper{
+        padding: 0;
+    }
+    
+    td, th{   
+        max-width: 120px;
+        min-width: 0px;
+    }
+
+    .container{
+        padding: 48px;
+    }
+
+    input[type="date"]{
+        max-width: 90px;
+    }
+
+    .toggle-theme{
+        position: absolute;
+        top: 8px;
+        left: 8px;
+
+    }
+
+    .report{
+        position: absolute;
+        top: 8px;
+        left: 50px;
+
+    }
+    
+    .top-report{
+        display: block;
+    }
+
+    .total-expenditure{
+        width: 100%;
+    }
+
+    .item-expenditure{
+        width: 100%; 
+        margin: 16px 0;
+    }
+
+    .false-page-wrapper{
+        border: 1px solid black;
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        border-radius: 8px;
+        padding: 16px;
+        
+    }
+
+    .total-buttons button, .item-buttons button{
+        border-radius: 4px;
+        margin-right: 2px;
+        padding: 4px;
+        cursor: pointer;
+    }
+}
