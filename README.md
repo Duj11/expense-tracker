@@ -18,8 +18,11 @@ A minimalist web app to track expenses in a table format
 - New rows (records) are dynamically created and stored in persistent local storage by clicking the plus '+' button left of the table 
 - User input, accepted through text input and date input type in the table cells, gets stored and processed to calculate and display total expenditure, sorted to determine top expenses and organized by seasons to provide insights about a users spending
 
-## How to Run 
-- just open index.html in your browser 
+## Live Demo 
+- [View the site here](https://duj11.github.io/expense-tracker/)
+
+## Preview 
+- ![App Screenshot](assets/images/screenshot.png)
 
 ## What Was Learned 
 - DOM manipulation in regards to element selection and usage such as div, table and dialog. Dynamic UI updating for table rows and theme changes, event listening and bubbling for buttons and inputs. User input handling and algorithms for sorting, categorizing and calculating total.
@@ -32,3 +35,4 @@ A minimalist web app to track expenses in a table format
 - Better user input validation especially for season column 
 - Add support for budgeting and income tracking 
 - User account creation, authorization and authentication 
+
