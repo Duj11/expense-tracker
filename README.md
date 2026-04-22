@@ -5,7 +5,7 @@ A minimalist web app to track expenses in a table format
 ## Features 
 - Add and edit expense records with reason, amount, date and season
 - Report for total and seasonal expenditure as well as top expenses
-- Local storage persistence
+- Persistent data with localStorage
 
 ## Technologies Used
 - HTML
