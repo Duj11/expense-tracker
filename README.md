@@ -34,5 +34,5 @@ A minimalist web app to track expenses in a table format
 - Show more analytics like charts and graphs
 - Better user input validation especially for season column 
 - Add support for budgeting and income tracking 
-- User account creation, authorization and authentication 
+- User account creation, authorization and authentication
 
